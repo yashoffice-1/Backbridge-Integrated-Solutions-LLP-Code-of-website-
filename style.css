@@ -15,6 +15,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.logo-container {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-container img {
+    display: block;
+}
+
 /* Header Styles - Glass Morphism */
 header {
     background: rgba(255, 255, 255, 0.7);
@@ -56,18 +65,18 @@ header.scrolled {
 
 /* Button Styles - Modern Gradient */
 .btn-primary {
-    background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
-    color: #001F3F;
+    background: linear-gradient(135deg, #D99024 0%, #B8790A 100%);
+    color: #0C2D48;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
     border-radius: 9999px;
-    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+    box-shadow: 0 4px 15px rgba(217, 144, 36, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+    box-shadow: 0 8px 25px rgba(217, 144, 36, 0.4);
 }
 
 .btn-secondary {
@@ -117,7 +126,7 @@ header.scrolled {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, #FFC107, #002B5B);
+    background: linear-gradient(to bottom, #D99024, #174C72);
     opacity: 0.2;
     z-index: 0;
 }
@@ -135,7 +144,7 @@ header.scrolled {
 
 .leadership-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 31, 63, 0.15);
+    box-shadow: 0 20px 40px rgba(12, 45, 72, 0.15);
 }
 
 /* Outcome Card */
@@ -158,8 +167,8 @@ header.scrolled {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #FFC107;
-    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+    border-color: #D99024;
+    box-shadow: 0 0 0 3px rgba(217, 144, 36, 0.1);
 }
 
 .contact-form textarea {
@@ -169,7 +178,7 @@ header.scrolled {
 
 /* Active Navigation Link */
 .nav-active {
-    color: #001F3F !important;
+    color: #0C2D48 !important;
     font-weight: 600;
     position: relative;
 }
@@ -181,7 +190,7 @@ header.scrolled {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(to right, #FFC107, #FFB300);
+    background: linear-gradient(to right, #D99024, #B8790A);
     border-radius: 2px;
 }
 
@@ -239,7 +248,7 @@ html {
 
 /* Gradient Text */
 .gradient-text {
-    background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
+    background: linear-gradient(135deg, #D99024 0%, #B8790A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
