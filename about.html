@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Backbridge | Professional Outsourcing Partner for Finance,
+            HR & Compliance</title>
+        <meta name="description"
+            content="Learn how Backbridge transforms business operations through expert outsourcing in Finance, HR, and Compliance with a leadership team bringing decades of experience.">
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Google Fonts - Montserrat & Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Lucide Icons CDN -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+
+        <!-- GSAP CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    </head>
+
+    <body class="bg-[#F8FAFC]">
+
+        <!-- HEADER -->
+        <header id="header"
+            class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/70 shadow-sm transition-all duration-300">
+            <nav class="container mx-auto px-4 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="logo-container">
+                        <img
+                            src="images/Logo-png.png"
+                            alt="Backbridge Logo" class="h-12 md:h-14 w-auto">
+                    </a>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="index.html"
+                            class="text-[#333333] hover:text-[#FFC107] transition-colors duration-300">Home</a>
+                        <a href="about.html"
+                            class="font-semibold text-[#001F3F] nav-active">About</a>
+                        <a href="services.html"
+                            class="text-[#333333] hover:text-[#FFC107] transition-colors duration-300">Services</a>
+                        <a href="journey.html"
+                            class="text-[#333333] hover:text-[#FFC107] transition-colors duration-300">Journey</a>
+                    </div>
+                    <a href="contact.html"
+                        class="hidden md:block bg-gradient-to-r from-[#FFC107] to-[#FFB300] text-[#001F3F] px-6 py-2.5 rounded-full font-semibold text-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Get in Touch
+                    </a>
+                    <button id="mobile-menu-btn"
+                        class="md:hidden text-[#001F3F]">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                <div id="mobile-menu"
+                    class="hidden md:hidden mt-4 space-y-2 pb-4">
+                    <a href="index.html"
+                        class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">Home</a>
+                    <a href="about.html"
+                        class="block font-semibold text-[#001F3F] py-2 nav-active">About</a>
+                    <a href="services.html"
+                        class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">Services</a>
+                    <a href="journey.html"
+                        class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">Journey</a>
+                    <a href="contact.html"
+                        class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section
+            class="hero-section relative overflow-hidden min-h-[60vh] flex items-center">
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-[#001F3F] via-[#002B5B] to-[#001F3F]"></div>
+            <div class="absolute inset-0 opacity-20">
+                <div
+                    class="absolute top-20 left-10 w-72 h-72 bg-[#FFC107] rounded-full blur-3xl"></div>
+                <div
+                    class="absolute bottom-20 right-10 w-96 h-96 bg-[#002B5B] rounded-full blur-3xl"></div>
+            </div>
+            <div
+                class="container mx-auto px-4 lg:px-8 relative z-10 py-32 md:py-40">
+                <div class="text-center text-white fade-up">
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 uppercase tracking-tight"
+                        style="font-size: clamp(2rem, 5vw, 3.5rem);">
+                        About Backbridge Integrated Solutions LLP
+                    </h1>
+                    <p
+                        class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto"
+                        style="font-size: clamp(1rem, 2vw, 1.25rem);">
+                        Transforming business operations through expertise,
+                        innovation, and trust.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPANY STORY SECTION -->
+        <section class="py-32 bg-white">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="fade-up">
+                        <h2
+                            class="text-4xl md:text-5xl font-bold text-[#001F3F] mb-6 uppercase tracking-tight"
+                            style="font-size: clamp(2rem, 4vw, 3rem);">
+                            Who We Are
+                        </h2>
+                        <p class="text-lg text-[#333333] mb-6 leading-relaxed">
+                            Backbridge Integrated Solutions LLP is a
+                            professional outsourcing partner specializing in
+                            Finance, HR, and Compliance services. We help
+                            organizations streamline operations, reduce costs,
+                            and achieve governance excellence through customized
+                            outsourcing frameworks.
+                        </p>
+                        <p class="text-lg text-[#333333] mb-6 leading-relaxed">
+                            Founded by Proven Professionals with decades of
+                            combined experience, Backbridge combines domain
+                            expertise with cutting-edge automation to deliver
+                            measurable results.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div
+                                    class="w-6 h-6 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <i data-lucide="check"
+                                        class="w-4 h-4 text-[#001F3F]"></i>
+                                </div>
+                                <span class="text-[#333333]">Domain expertise
+                                    across Finance, HR, and Compliance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="w-6 h-6 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <i data-lucide="check"
+                                        class="w-4 h-4 text-[#001F3F]"></i>
+                                </div>
+                                <span class="text-[#333333]">Customized
+                                    outsourcing frameworks tailored to your
+                                    needs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="w-6 h-6 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <i data-lucide="check"
+                                        class="w-4 h-4 text-[#001F3F]"></i>
+                                </div>
+                                <span class="text-[#333333]">Proven track record
+                                    with leading organizations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="w-6 h-6 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                    <i data-lucide="check"
+                                        class="w-4 h-4 text-[#001F3F]"></i>
+                                </div>
+                                <span class="text-[#333333]">Commitment to
+                                    operational excellence and governance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fade-up">
+                        <div class="relative">
+                            <img
+                                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=600&fit=crop"
+                                alt="Company Overview"
+                                class="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute -inset-4 bg-gradient-to-r from-[#FFC107] to-[#FFB300] rounded-2xl blur-2xl opacity-30 -z-10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION & VISION SECTION -->
+        <section class="py-32 bg-[#F8FAFC]">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Mission Card -->
+                    <div
+                        class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="target"
+                                class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Our
+                            Mission</h3>
+                        <p class="text-[#333333] leading-relaxed">
+                            To empower businesses to achieve operational
+                            excellence through the seamless integration of
+                            human expertise, intelligent automation, and
+                            outsourcing solutions. </p>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div
+                        class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="eye"
+                                class="w-8 h-8 text-[#001F3F]"></i>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Our
+                            Vision</h3>
+                        <p class="text-[#333333] leading-relaxed">
+                            To be the trusted global partner for organizations
+                            seeking to transform their operations through
+                            intelligent outsourcingdriving efficiency,
+                            compliance, and sustainable growth. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEADERSHIP GRID -->
+        <section class="py-32 bg-white">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center mb-16 fade-up">
+                    <h2
+                        class="text-4xl md:text-5xl font-bold text-[#001F3F] mb-6 uppercase tracking-tight"
+                        style="font-size: clamp(2rem, 4vw, 3rem);">
+                        Our Leadership
+                    </h2>
+                    <p class="text-lg text-[#333333] max-w-3xl mx-auto">
+                        Led by Proven Professionals with a shared commitment to
+                        excellence.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <!-- Harsh Gupta -->
+                    <div
+                        class="leadership-card bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-2 hover:border-[#FFC107]">
+                        <div class="text-center mb-4">
+                            <img
+                                src="images/Harsh Gupta.jpeg"
+                                alt="Harsh Gupta"
+                                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#FFC107] shadow-lg">
+                            <h3 class="text-xl font-bold text-[#001F3F]">Harsh
+                                Gupta</h3>
+                            <p class="text-[#FFC107] font-semibold mb-1">Founder
+                                Partner</p>
+                            <p class="text-sm text-[#333333] mb-3">Inter-CA,
+                                CS</p>
+                        </div>
+                        <p
+                            class="text-[#333333] text-sm leading-relaxed text-center">
+                            15+ years of experience in finance operations and
+                            compliance across Tata Digital, Indus Towers,
+                            and Starbucks.
+                        </p>
+                        <div class="flex justify-center mt-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="linkedin"
+                                    class="w-5 h-5 text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Pratima Maheshwari -->
+                    <div
+                        class="leadership-card bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-2 hover:border-[#FFC107]">
+                        <div class="text-center mb-4">
+                            <img
+                                src="images/Pratima Maheshwari.jpeg"
+                                alt="Pratima Maheshwari"
+                                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#FFC107] shadow-lg">
+                            <h3 class="text-xl font-bold text-[#001F3F]">Pratima
+                                Maheshwari</h3>
+                            <p class="text-[#FFC107] font-semibold mb-1">Founder
+                                Partner</p>
+                            <p class="text-sm text-[#333333] mb-3">CA</p>
+                        </div>
+                        <p
+                            class="text-[#333333] text-sm leading-relaxed text-center">
+                            12+ years in financial reporting and transformation
+                            at Raymond and Reliance Industries.
+                        </p>
+                        <div class="flex justify-center mt-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="linkedin"
+                                    class="w-5 h-5 text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Garishma Arora -->
+                    <div
+                        class="leadership-card bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-2 hover:border-[#FFC107]">
+                        <div class="text-center mb-4">
+                            <img
+                                src="images/Garishma Arora.jpeg"
+                                alt="Garishma Arora"
+                                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#FFC107] shadow-lg">
+                            <h3
+                                class="text-xl font-bold text-[#001F3F]">Garishma
+                                Arora</h3>
+                            <p class="text-[#FFC107] font-semibold mb-1">Senior
+                                Consultant</p>
+                            <p class="text-sm text-[#333333] mb-3">CS, LLB</p>
+                        </div>
+                        <p
+                            class="text-[#333333] text-sm leading-relaxed text-center">
+                            13 years in corporate law and secretarial compliance
+                            with Vodafone, Genpact, Airworks.
+                        </p>
+                        <div class="flex justify-center mt-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="linkedin"
+                                    class="w-5 h-5 text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Manish Goyal -->
+                    <div
+                        class="leadership-card bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-2 hover:border-[#FFC107]">
+                        <div class="text-center mb-4">
+                            <img
+                                src="images/Manish Goyal.jpeg"
+                                alt="Manish Goyal"
+                                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-[#FFC107] shadow-lg">
+                            <h3 class="text-xl font-bold text-[#001F3F]">Manish
+                                Goyal</h3>
+                            <p class="text-[#FFC107] font-semibold mb-1">Senior
+                                Consultant</p>
+                            <p class="text-sm text-[#333333] mb-3">MBA,
+                                CA-Inter</p>
+                        </div>
+                        <p
+                            class="text-[#333333] text-sm leading-relaxed text-center">
+                            Specialized in shared services operations with Tata
+                            Communications and Phoenix Group.
+                        </p>
+                        <div class="flex justify-center mt-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="linkedin"
+                                    class="w-5 h-5 text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section
+            class="py-32 bg-gradient-to-r from-[#001F3F] via-[#002B5B] to-[#001F3F] relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div
+                    class="absolute top-0 left-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+                <div
+                    class="absolute bottom-0 right-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+            </div>
+            <div
+                class="container mx-auto px-4 lg:px-8 text-center relative z-10">
+                <h2
+                    class="text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight"
+                    style="font-size: clamp(2rem, 4vw, 3rem);">
+                    Join Hands with Backbridge — Let's Drive Transformation
+                    Together
+                </h2>
+                <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
+                    Ready to transform your business operations? Connect with
+                    our expert team today.
+                </p>
+                <a href="contact.html"
+                    class="bg-gradient-to-r from-[#FFC107] to-[#FFB300] text-[#001F3F] px-10 py-5 rounded-full font-semibold text-lg inline-block hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    Contact Us Today
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-[#001F3F] text-white py-16">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-12 mb-12">
+                    <div>
+                        <h3
+                            class="text-2xl font-bold mb-4 uppercase">Backbridge</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            We Deliver integrated outsourcing solutions across
+                            Finance, HR, and Compliance —
+                            powered by automation and human expertise.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 uppercase">Quick
+                            Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Home</a></li>
+                            <li><a href="about.html"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">About</a></li>
+                            <li><a href="services.html"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Services</a>
+                            </li>
+                            <li><a href="journey.html"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Journey</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 uppercase">Contact
+                            Info</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i data-lucide="phone"
+                                    class="w-5 h-5 mr-3 text-[#FFC107]"></i>
+                                <a href="tel:+917838837590"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">+91
+                                    7838837590</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="mail"
+                                    class="w-5 h-5 mr-3 text-[#FFC107]"></i>
+                                <a href="mailto:info@backbridge.in"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">info@backbridge.in</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="map-pin"
+                                    class="w-5 h-5 mr-3 text-[#FFC107]"></i>
+                                <span class="text-gray-300">Delhi NCR,
+                                    Mumbai</span>
+                            </li>
+                            <li class="flex items-center">
+                                <!-- LinkedIn Icon SVG -->
+                                <svg class="w-5 h-5 mr-3 text-[#FFC107]"
+                                    fill="currentColor" viewBox="0 0 24 24"
+                                    aria-label="LinkedIn"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.782-1.75-1.748 0-.963.782-1.75 1.75-1.75s1.75.787 1.75 1.75c0 .966-.784 1.748-1.75 1.748zm13.5 11.268h-3v-5.604c0-1.336-.025-3.058-1.865-3.058-1.868 0-2.155 1.459-2.155 2.967v5.695h-3v-10h2.881v1.367h.041c.402-.761 1.381-1.561 2.844-1.561 3.042 0 3.604 2.003 3.604 4.605v5.589z" />
+                                </svg>
+                                <a
+                                    href="https://www.linkedin.com/company/backbridgesolutions/"
+                                    class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-600 pt-8 text-center">
+                    <p class="text-gray-300">
+                        © 2025 Backbridge Integrated Solutions LLP. All rights
+                        reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Custom JavaScript -->
+        <script src="script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backbridge Integrated Solutions LLP | Outsourcing Solutions for Finance, HR & Compliance</title>
+    <meta name="description"
+        content="Backbridge offers professional outsourcing solutions in Finance, HR, and Compliance, helping organizations reduce costs, improve accuracy, and ensure regulatory excellence.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Montserrat & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8FAFC]">
+
+    <!-- HEADER (Sticky with Glass Blur) -->
+    <header id="header"
+        class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/70 shadow-sm transition-all duration-300">
+        <nav class="container mx-auto px-4 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="logo-container">
+                    <img src="images/Logo-png.png"
+                        alt="Backbridge Logo" class="h-12 md:h-14 w-auto">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-semibold text-[#001F3F] nav-active">Home</a>
+                    <a href="about.html"
+                        class="text-[#333333] hover:text-[#FFC107] transition-colors duration-300">About</a>
+                    <a href="services.html"
+                        class="text-[#333333] hover:text-[#FFC107] transition-colors duration-300">Services</a>
+                    <a href="journey.html"
+                        class="text-[#333333] hover:text-[#FFC107] transition-colors duration-300">Journey</a>
+                </div>
+                <a href="contact.html"
+                    class="hidden md:block bg-gradient-to-r from-[#FFC107] to-[#FFB300] text-[#001F3F] px-6 py-2.5 rounded-full font-semibold text-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Get in Touch
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-[#001F3F]">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 pb-4">
+                <a href="index.html" class="block font-semibold text-[#001F3F] py-2 nav-active">Home</a>
+                <a href="about.html" class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">About</a>
+                <a href="services.html"
+                    class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">Services</a>
+                <a href="journey.html"
+                    class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">Journey</a>
+                <a href="contact.html"
+                    class="block text-[#333333] py-2 hover:text-[#FFC107] transition-colors">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION (Full-screen with Animated Gradient) -->
+    <section id="hero" class="min-h-screen flex items-center pt-20 pb-12 relative overflow-hidden">
+        <!-- Animated Gradient Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-[#001F3F] via-[#002B5B] to-[#001F3F]"></div>
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-[#FFC107] rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-[#002B5B] rounded-full blur-3xl animate-pulse"
+                style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10 py-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="hero-text text-white">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight uppercase tracking-tight"
+                        style="font-size: clamp(2rem, 5vw, 2.5rem);">
+                        Transforming Business Operations Through Finance, HR & Compliance Outsourcing
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed"
+                        style="font-size: clamp(1rem, 2vw, 1.25rem);">
+                        Through strategic partnership, we simplify complexity, strengthen compliance, and drive
+                        operational excellence - enabling leaders to accelerate growth with confidence.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="services.html"
+                            class="bg-gradient-to-r from-[#FFC107] to-[#FFB300] text-[#001F3F] px-8 py-4 rounded-full font-semibold text-lg text-center hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                            Solutions Portfolio
+                        </a>
+                      
+                    </div>
+                </div>
+                <div class="hero-image hidden md:block">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                            alt="Business Excellence"
+                            class="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-r from-[#FFC107] to-[#FFB300] rounded-2xl blur-2xl opacity-30 -z-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY VALUE SECTION (3 Glass Cards) -->
+    <section class="py-32 bg-[#F8FAFC]">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#001F3F] mb-6 uppercase tracking-tight"
+                    style="font-size: clamp(2rem, 4vw, 3rem);">
+                    Crafted with Expertise. Committed to Results.
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Cost Efficiency Card -->
+                <div
+                    class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="dollar-sign" class="w-8 h-8 text-[#001F3F]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Cost Efficiency</h3>
+                    <p class="text-[#333333] leading-relaxed mb-4">Achieve 40% savings through strategic outsourcing
+                        and process optimization.</p>
+                    <div class="text-3xl font-bold text-[#FFC107]">40%</div>
+                </div>
+
+                <!-- Operational Accuracy Card -->
+                <div
+                    class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="check-circle" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Operational Accuracy</h3>
+                    <p class="text-[#333333] leading-relaxed mb-4">Maintain 99%+ accuracy with automated processes and
+                        quality controls.</p>
+                    <div class="text-3xl font-bold text-[#002B5B]">99%+</div>
+                </div>
+
+                <!-- Scalability Card -->
+                <div
+                    class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-[#001F3F]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Scalability & Flexibility</h3>
+                    <p class="text-[#333333] leading-relaxed mb-4">Scale operations seamlessly as your business grows
+                        and evolves.</p>
+                    <div class="text-3xl font-bold text-[#FFC107]">∞</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUTSOURCING MARKET AT A GLANCE -->
+    <section class="py-32 bg-gradient-to-br from-[#001F3F] via-[#002B5B] to-[#001F3F] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight"
+                    style="font-size: clamp(2rem, 4vw, 3rem);">
+                    Outsourcing Market at a Glance
+                </h2>
+                <p class="text-lg text-gray-200 max-w-3xl mx-auto">
+                    The global BPO market is projected to reach $525B by 2030 with 9.8% annual growth.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="glass-card bg-white/10 backdrop-blur-md p-8 rounded-2xl text-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-4xl md:text-5xl font-bold text-[#FFC107] mb-4">$525B</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Market Size</h3>
+                    <p class="text-gray-200">Projected global BPO market value by 2030</p>
+                </div>
+                <div
+                    class="glass-card bg-white/10 backdrop-blur-md p-8 rounded-2xl text-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-4xl md:text-5xl font-bold text-[#FFC107] mb-4">9.8%</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Annual Growth</h3>
+                    <p class="text-gray-200">Steady growth driven by digital transformation</p>
+                </div>
+                <div
+                    class="glass-card bg-white/10 backdrop-blur-md p-8 rounded-2xl text-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-4xl md:text-5xl font-bold text-[#FFC107] mb-4">Digital</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Transformation Driven</h3>
+                    <p class="text-gray-200">Technology-enabled solutions reshaping the industry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="py-32 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#001F3F] mb-6 uppercase tracking-tight"
+                    style="font-size: clamp(2rem, 4vw, 3rem);">
+                    Comprehensive Outsourcing Solutions
+                </h2>
+                <p class="text-lg text-[#333333] max-w-3xl mx-auto">
+                    Comprehensive solutions across Finance, HR, and Compliance
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Finance Card -->
+                <div
+                    class="service-card bg-gradient-to-br from-[#001F3F] to-[#002B5B] p-8 rounded-2xl text-white hover:scale-105 transition-all duration-500 shadow-xl hover:shadow-2xl">
+                    <div
+                        class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="calculator" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase">Finance & Accounting</h3>
+                    <p class="text-gray-200 leading-relaxed mb-6">
+                        Expertise Driven Financial Process Management ensuring cost savings through operational excellence & resource optimisation
+                    </p>
+                    <a href="services.html"
+                        class="text-[#FFC107] font-semibold hover:underline inline-flex items-center">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- HR Card -->
+                <div
+                    class="service-card bg-gradient-to-br from-[#002B5B] to-[#001F3F] p-8 rounded-2xl text-white hover:scale-105 transition-all duration-500 shadow-xl hover:shadow-2xl">
+                    <div
+                        class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase">Human Resources & Payroll</h3>
+                    <p class="text-gray-200 leading-relaxed mb-6">
+                        Complete HR outsourcing including payroll, staffing, and compliance management.
+                    </p>
+                    <a href="services.html"
+                        class="text-[#FFC107] font-semibold hover:underline inline-flex items-center">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Compliance Card -->
+                <div
+                    class="service-card bg-gradient-to-br from-[#001F3F] to-[#002B5B] p-8 rounded-2xl text-white hover:scale-105 transition-all duration-500 shadow-xl hover:shadow-2xl">
+                    <div
+                        class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase">Compliance & Secretarial Services</h3>
+                    <p class="text-gray-200 leading-relaxed mb-6">
+                        End-to-end statutory filing and legal advisory support for corporate governance.
+                    </p>
+                    <a href="services.html"
+                        class="text-[#FFC107] font-semibold hover:underline inline-flex items-center">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- TRANSFORMATION PREVIEW (Horizontal Timeline) -->
+    <section class="py-32 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#001F3F] mb-6 uppercase tracking-tight"
+                    style="font-size: clamp(2rem, 4vw, 3rem);">
+                    Our Transformation Journey
+                </h2>
+            </div>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div
+                    class="hidden md:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-[#FFC107] via-[#002B5B] to-[#FFC107] opacity-30">
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8 relative">
+                    <!-- Step 1: Discovery -->
+                    <div
+                        class="timeline-step bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg">
+                            <i data-lucide="search" class="w-10 h-10 text-[#001F3F]"></i>
+                        </div>
+                        <div
+                            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-12 h-12 bg-[#001F3F] rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            1</div>
+                        <h3 class="text-xl font-bold text-[#001F3F] mb-3 uppercase">Discovery</h3>
+                        <p class="text-[#333333] text-sm leading-relaxed">Understanding your current processes and
+                            requirements.</p>
+                    </div>
+
+                    <!-- Step 2: Design -->
+                    <div
+                        class="timeline-step bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg">
+                            <i data-lucide="layout" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div
+                            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-12 h-12 bg-[#001F3F] rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            2</div>
+                        <h3 class="text-xl font-bold text-[#001F3F] mb-3 uppercase">Design</h3>
+                        <p class="text-[#333333] text-sm leading-relaxed">Customizing solutions tailored to your needs.
+                        </p>
+                    </div>
+
+                    <!-- Step 3: Implementation -->
+                    <div
+                        class="timeline-step bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg">
+                            <i data-lucide="rocket" class="w-10 h-10 text-[#001F3F]"></i>
+                        </div>
+                        <div
+                            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-12 h-12 bg-[#001F3F] rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            3</div>
+                        <h3 class="text-xl font-bold text-[#001F3F] mb-3 uppercase">Implementation</h3>
+                        <p class="text-[#333333] text-sm leading-relaxed">Seamless migration with minimal disruption.
+                        </p>
+                    </div>
+
+                    <!-- Step 4: Optimization -->
+                    <div
+                        class="timeline-step bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-full flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg">
+                            <i data-lucide="trending-up" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div
+                            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-12 h-12 bg-[#001F3F] rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            4</div>
+                        <h3 class="text-xl font-bold text-[#001F3F] mb-3 uppercase">Optimization</h3>
+                        <p class="text-[#333333] text-sm leading-relaxed">Continuous improvement and performance
+                            tracking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="journey.html"
+                    class="bg-gradient-to-r from-[#FFC107] to-[#FFB300] text-[#001F3F] px-8 py-4 rounded-full font-semibold text-lg inline-block hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    Explore Full Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDATION TO TRANSFORMATION SECTION -->
+    <section class="py-32 bg-[#F8FAFC]">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#001F3F] mb-6 uppercase tracking-tight"
+                    style="font-size: clamp(2rem, 4vw, 3rem);">
+                    From Foundation to Transformation – We Grow With You
+                </h2>
+                <p class="text-lg text-[#333333] max-w-4xl mx-auto leading-relaxed">
+                    Every stage of growth deserves the right support. BACKBRIDGE empowers startups, scale-ups, and
+                    enterprises with agile outsourcing solutions that expand as you do—helping you streamline operations,
+                    enter new markets, and maintain compliance with confidence. No rigid plans. Just scalable partnership.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="sparkles" class="w-8 h-8 text-[#001F3F]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Startup Phase – Launch &amp; Build</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Your business is growing fast—we’ll help you build a solid foundation. From compliant payroll and
+                        smart accounting to HR setup and statutory compliance, we make operations simple so you can focus
+                        on scaling your vision. Add EOR and remote hiring services to expand quickly—without the legal
+                        complexity.
+                    </p>
+                </div>
+                <div
+                    class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-[#002B5B] to-[#001F3F] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="layers" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Growth Phase – Integrate &amp; Accelerate</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        As your team grows, so does operational complexity. We bring Finance, HR, and Compliance together
+                        under one managed service platform. Our automation-first approach reduces manual effort, enhances
+                        transparency, and improves efficiency—helping you grow faster and smarter.
+                    </p>
+                </div>
+                <div
+                    class="glass-card bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="building-2" class="w-8 h-8 text-[#001F3F]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#001F3F] mb-4 uppercase">Enterprise Scale – Transform &amp; Optimize</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        For enterprises ready to take operations to the next level. We help standardize and streamline
+                        multi-entity operations across geographies and functions. With data insights, automation, and
+                        expert oversight, we drive continuous improvement and sustainable growth—so your enterprise runs
+                        seamlessly, everywhere.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY PARTNER WITH BACKBRIDGE -->
+    <section class="py-32 bg-gradient-to-br from-[#001F3F] via-[#002B5B] to-[#001F3F] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-up text-white">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 uppercase tracking-tight"
+                        style="font-size: clamp(2rem, 4vw, 3rem);">
+                        Why Partner with Baeckbridg?
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div
+                                class="w-8 h-8 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i data-lucide="check" class="w-5 h-5 text-[#001F3F]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Tailored Processes</h3>
+                                <p class="text-gray-200">Every solution is customized to match your unique business
+                                    requirements and workflows.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-8 h-8 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i data-lucide="check" class="w-5 h-5 text-[#001F3F]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Early Partner Advantage</h3>
+                                <p class="text-gray-200">Get ahead of the curve with innovative solutions and strategic
+                                    insights.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-8 h-8 bg-gradient-to-br from-[#FFC107] to-[#FFB300] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i data-lucide="check" class="w-5 h-5 text-[#001F3F]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Flexible Engagement Models</h3>
+                                <p class="text-gray-200">Choose from multiple engagement models that suit your budget
+                                    and timeline.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-up hidden md:block">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop"
+                            alt="Why Choose Backbridge"
+                            class="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-r from-[#FFC107] to-[#FFB300] rounded-2xl blur-2xl opacity-30 -z-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="py-32 bg-gradient-to-r from-[#001F3F] via-[#002B5B] to-[#001F3F] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#FFC107] rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight"
+                style="font-size: clamp(2rem, 4vw, 3rem);">
+                Build the Future of Operations with Backbridge
+            </h2>
+            <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
+                Ready to transform your business operations? Get in touch with our experts today.
+            </p>
+            <a href="contact.html"
+                class="bg-gradient-to-r from-[#FFC107] to-[#FFB300] text-[#001F3F] px-10 py-5 rounded-full font-semibold text-lg inline-block hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                Start Now
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#001F3F] text-white py-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase">Backbridge</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        We Deliver integrated outsourcing solutions across Finance, HR, and Compliance —
+                        powered by automation and human expertise.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 uppercase">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">About</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Services</a>
+                        </li>
+                        <li><a href="journey.html"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Journey</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 uppercase">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-5 h-5 mr-3 text-[#FFC107]"></i>
+                            <a href="tel:+917838837590"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">+91
+                                7838837590</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-5 h-5 mr-3 text-[#FFC107]"></i>
+                            <a href="mailto:info@backbridge.in"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">info@backbridge.in</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="map-pin" class="w-5 h-5 mr-3 text-[#FFC107]"></i>
+                            <span class="text-gray-300">Delhi NCR, Mumbai</span>
+                        </li>
+                        <li class="flex items-center">
+                            <!-- LinkedIn Icon SVG -->
+                            <svg class="w-5 h-5 mr-3 text-[#FFC107]" fill="currentColor" viewBox="0 0 24 24" aria-label="LinkedIn" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.782-1.75-1.748 0-.963.782-1.75 1.75-1.75s1.75.787 1.75 1.75c0 .966-.784 1.748-1.75 1.748zm13.5 11.268h-3v-5.604c0-1.336-.025-3.058-1.865-3.058-1.868 0-2.155 1.459-2.155 2.967v5.695h-3v-10h2.881v1.367h.041c.402-.761 1.381-1.561 2.844-1.561 3.042 0 3.604 2.003 3.604 4.605v5.589z"/>
+                            </svg>
+                            <a href="https://www.linkedin.com/company/backbridgesolutions/"
+                                class="text-gray-300 hover:text-[#FFC107] transition-colors duration-300">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2025 Backbridge Integrated Solutions LLP. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
