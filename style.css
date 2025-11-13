@@ -24,6 +24,66 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
+/* Accordion Styles */
+.accordion-card {
+    /* border: 2px solid #D99024; */
+    /* border-radius: 1.5rem; */
+    background: linear-gradient(135deg, rgba(12, 45, 72, 0.95), rgba(23, 76, 114, 0.95));
+    color: #F8FAFC;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accordion-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(12, 45, 72, 0.2);
+}
+
+.accordion-card summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
+}
+
+.accordion-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-card summary::after {
+    content: '+';
+    font-size: 1.75rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #D99024;
+    transition: transform 0.3s ease;
+}
+
+.accordion-card[open] summary::after {
+    content: '\2212';
+    transform: rotate(0deg);
+}
+
+.accordion-card ul {
+    padding-left: 1.75rem;
+    color: #E2E8F0;
+    list-style: none;
+}
+
+.accordion-card ul li {
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.accordion-card ul li::before {
+    content: '\2713';
+    position: absolute;
+    left: -1.35rem;
+    color: #D99024;
+    font-weight: 700;
+}
+
 /* Header Styles - Glass Morphism */
 header {
     background: rgba(255, 255, 255, 0.7);
